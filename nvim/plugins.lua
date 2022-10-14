@@ -1,5 +1,5 @@
-   -- This file can be loaded by calling `require('plugins')` from your init.lua
-
+-- This file can be loaded by calling `require('plugins')` from your init.lua
+-- It is recomended that you copy this file to the following location
 
 
 
