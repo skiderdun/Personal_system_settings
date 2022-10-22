@@ -29,6 +29,11 @@ return require('packer').startup(function(use)
 
         -- SLIME!!
         use "jpalardy/vim-slime"
+	
+	-- Toggle Terrminal
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		  require("toggleterm").setup()
+	  end}
 
         --color scheme
         use { "ellisonleao/gruvbox.nvim" }
