@@ -1,7 +1,4 @@
 -- This file can be loaded by calling `require('plugins')` from your init.lua
--- It is recomended that you copy this file to the following location
-
-
 
 vim.cmd [[packadd packer.nvim]]
 
@@ -20,6 +17,7 @@ local packer_bootstrap = ensure_packer()
 
 
 return require('packer').startup(function(use)
+	-- Plugins Here:
    -- Packer can manage itself
         use 'wbthomason/packer.nvim'
 
@@ -27,13 +25,9 @@ return require('packer').startup(function(use)
         use "terrortylor/nvim-comment"
         require('nvim_comment').setup()
 
-        -- SLIME!!
-        use "jpalardy/vim-slime"
-	
 	-- Toggle Terrminal
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-		  require("toggleterm").setup()
-	  end}
+	end}
 
         --color scheme
         use { "ellisonleao/gruvbox.nvim" }

@@ -8,7 +8,7 @@ package.path = string.format("%s;%s?.lua", package.path, script_path())
 
 
 require('plugins')
-
+require('configs/toggleterm')
 
 --Color scheme
 
