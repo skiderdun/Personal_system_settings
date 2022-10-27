@@ -56,6 +56,10 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# set the browser
+
+export BROWSER='/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
+
 # Some Home brew variables for assthetics 
 Grey="\[\033[38;2;64;64;64m\]"
 AirFBlue="\[\033[38;2;93;138;168m\]"
@@ -138,3 +142,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+. "$HOME/.cargo/env"
